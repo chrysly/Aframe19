@@ -17,7 +17,7 @@
   </head>
   <body>
     <a-scene>
-      <a-entity position="0 0 0" particle-system="preset: dust" size="2" sizeSpread = "6" accelerationSpread = "10 10 10" velocityValue = "0 0 0" velocitySpread = "10 10 10" maxAge = "2"></a-entity>
+      <a-entity position="0 0 0" particle-system="preset: dust" size="6" sizeSpread = "6" particleCount = "5000" accelerationSpread = "10 10 10" velocityValue = "0 0 0" velocitySpread = "10 10 10"></a-entity>
       <a-assets>
         <a-asset-item id="prismo" src="assets/room.gltf" onloaded="startScene"></a-asset-item> 
         <a-asset-item id="rock" src="scene.gltf" onloaded="startScene"></a-asset-item> 
@@ -26,7 +26,6 @@
       <a-entity>
         <a-entity gltf-model="#prismo" scale="4 4 4" position="-5 1 -22" animation="property: rotation; to: 360 360 0; loop: true; dur: 10000"></a-entity>
       </a-entity>
-      <a-sky color="#14115e"></a-sky>
       <script>
        
         function startScene() {
