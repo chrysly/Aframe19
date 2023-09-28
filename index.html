@@ -6,9 +6,11 @@
   <body>
     <a-scene>
       <a-assets>
-      
-        <a-asset-item id="rock" src="scene.gltf" onloaded="startScene"></a-asset-item>
+        <a-asset-item id="prismo" src="assets/room.gltf" onloaded="startScene"></a-asset-item> 
+        <a-asset-item id="rock" src="scene.gltf" onloaded="startScene"></a-asset-item> 
       </a-assets>
+
+      <a-entity gltf-model="#prismo" scale="4 4 4" position="-5 1 -22"></a-entity>
 
       <a-entity gltf-model="#rock" position="-5 1 -22"></a-entity>
       <a-entity gltf-model="#rock"  position="0 1 -22"></a-entity>
