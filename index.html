@@ -20,11 +20,53 @@
       <a-entity position="0 0 0" particle-system="preset: dust" size="6" sizeSpread = "6" particleCount = "5000" accelerationSpread = "10 10 10" velocityValue = "0 0 0" velocitySpread = "10 10 10"></a-entity>
       <a-assets>
         <a-asset-item id="prismo" src="assets/room.gltf" onloaded="startScene"></a-asset-item> 
-        <a-asset-item id="rock" src="scene.gltf" onloaded="startScene"></a-asset-item> 
+        <a-asset-item id="rock1" src="rock1/scene.gltf" onloaded="startScene"></a-asset-item> 
+        <a-asset-item id="rock2" src="rock2/scene.gltf" onloaded="startScene"></a-asset-item> 
+        <a-asset-item id="rock3" src="rock3/scene.gltf" onloaded="startScene"></a-asset-item> 
+
+      
       </a-assets>
+
 
       <a-entity>
         <a-entity gltf-model="#prismo" scale="1 1 1" position="-5 1 -22" animation="property: rotation; to: 360 360 0; loop: true; dur: 10000"></a-entity>
+         
+        <!-- Rock Section -->
+        <a-entity gltf-model="#rock1" position="-5 -7 -10"></a-entity>
+        <a-entity gltf-model="#rock3" position="-7 -15 -11"></a-entity>
+        <a-entity gltf-model="#rock1" position="-15 3 -15"></a-entity>
+        <a-entity gltf-model="#rock2" position="0 1 0"></a-entity>
+        <a-entity gltf-model="#rock3" position="5 1 -5"></a-entity>
+        <a-entity gltf-model="#rock2" position="-15 1 30"></a-entity>
+        <a-entity gltf-model="#rock1" position="-25 13 -20"></a-entity>
+        <a-entity gltf-model="#rock2" position="-5 23 50"></a-entity>
+        <a-entity gltf-model="#rock3" position="10 3 -10"></a-entity>
+        <a-entity gltf-model="#rock3" position="-10 5 -30"></a-entity>
+        <a-entity gltf-model="#rock2" position="15 2 40"></a-entity>
+        <a-entity gltf-model="#rock1" position="-20 7 -25"></a-entity>
+        <a-entity gltf-model="#rock2" position="10 4 55"></a-entity>
+        <a-entity gltf-model="#rock3" position="10 1 15"></a-entity>
+        <a-entity gltf-model="#rock3" position="-15 2 -20"></a-entity>
+        <a-entity gltf-model="#rock3" position="20 6 10"></a-entity>
+        <a-entity gltf-model="#rock2" position="-20 3 50"></a-entity>
+        <a-entity gltf-model="#rock1" position="15 5 -35"></a-entity>
+        <a-entity gltf-model="#rock2" position="20 8 60"></a-entity>
+        <a-entity gltf-model="#rock3" position="-25 4 5"></a-entity>
+        <a-entity gltf-model="#rock2" position="15 1 45"></a-entity>
+        <a-entity gltf-model="#rock1" position="-30 8 -30"></a-entity>
+        <a-entity gltf-model="#rock2" position="5 3 65"></a-entity>
+        <a-entity gltf-model="#rock3" position="0 2 20"></a-entity>
+        <a-entity gltf-model="#rock3" position="-10 2 -50"></a-entity>
+        <a-entity gltf-model="#rock2" position="15 5 80"></a-entity>
+        <a-entity gltf-model="#rock1" position="-25 6 -60"></a-entity>
+        <a-entity gltf-model="#rock2" position="20 3 95"></a-entity>
+        <a-entity gltf-model="#rock3" position="10 4 -70"></a-entity>
+        <a-entity gltf-model="#rock3" position="-15 5 -85"></a-entity>
+        <a-entity gltf-model="#rock2" position="0 8 -75"></a-entity>
+        <a-entity gltf-model="#rock1" position="5 7 -110"></a-entity>
+        <!-- Rock Section End -->
+
+    </a-entity>
       </a-entity>
       <script>
        
