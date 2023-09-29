@@ -11,11 +11,13 @@
           background-attachment: fixed;
       }
   </style>
-    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <a-entity position="0 2.25 -15" particle-system="color: #EF0000,#44CC00"></a-entity>
   </head>
   <body>
     <a-scene>
+      <a-entity position="0 0 0" particle-system="preset: dust" size="6" sizeSpread = "6" particleCount = "5000" accelerationSpread = "10 10 10" velocityValue = "0 0 0" velocitySpread = "10 10 10"></a-entity>
       <a-assets>
         <a-asset-item id="prismo" src="assets/room.gltf" onloaded="startScene"></a-asset-item> 
         <a-asset-item id="rock1" src="rock1/scene.gltf" onloaded="startScene"></a-asset-item> 
@@ -27,6 +29,7 @@
 
 
       <a-entity>
+<<<<<<< HEAD
         <a-entity gltf-model="#prismo" scale="4 4 4" position="-5 1 -22" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-entity>
          
         <!-- Rock Section -->
@@ -66,17 +69,16 @@
 
     </a-entity>
         
+=======
+        <a-entity gltf-model="#prismo" scale="4 4 4" position="-5 1 -22" animation="property: rotation; to: 360 360 0; loop: true; dur: 10000"></a-entity>
+>>>>>>> 4cb29ebf83a7db6b3415f32f97692fe95a11497c
       </a-entity>
-
-      
-
-      
       <script>
        
         function startScene() {
           console.log('The 3D model is loaded. Starting A-Frame scene.');     
           const scene = document.querySelector('a-scene');
-          scene.setAttribute('background', 'color: #ECECEC');
+          scene.setAttribute('background', 'color: #000000');
         }
       </script>
     </a-scene>
